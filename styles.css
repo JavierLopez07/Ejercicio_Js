@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    display: flex;
+    /* Cambio para usar flexbox */
+    justify-content: space-between;
+    /* Espacio entre el formulario y el resultado */
+    align-items: flex-start;
+    /* Alineación superior */
+    width: 800px;
+    /* Se amplía el contenedor */
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* El formulario ocupará el 50% del ancho del contenedor */
+}
+
+label {
+    margin-bottom: 5px; 
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultado {
+    width: 45%;
+    /* El bloque de resultados ocupará el 45% del ancho */
+    margin-left: 20px;
+    /* Espacio entre el formulario y el bloque de resultados */
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #e9f5ff;
+}
+
+.resultado-oculto {
+    display: none;
+}
+
+#cerrar {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cerrar:hover {
+    background-color: #c82333;
+}
